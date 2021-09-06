@@ -1,1 +1,10 @@
 <h1>Hello World</h1>
+Comments - {{likes.length}}
+<ul class="people_list">
+  {{#each likes}}
+    <li><h2>{{this.name}}</h2>
+    <p>{{this.date}} - Likes {{this.likes}}</p>
+    <p>{{this.body}}</p>
+    </li>
+  {{/each}}
+</ul>
